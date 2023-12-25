@@ -16,3 +16,4 @@
       cada elemento de tipode comida contiene un recyclerview con los restaurantes de esa caategoria
       hacerle click te lleva a un nuevo fragment de esa categoria
    
+      en un futuro se hara una bdd cuyo unico objetivo es guardar los datos de los recycler view, estos se cargaran con el metodo que ya hay
