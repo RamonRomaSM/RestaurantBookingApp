@@ -13,6 +13,9 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.app.databinding.ActivityMainBinding;
 
@@ -47,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+
+        //TODO: hasta aqui todo autogenerado
+
+        RecyclerView tiposDeComida=findViewById(R.id.tiposDeComidaRecycler);
+        tiposDeComida.setLayoutManager(new LinearLayoutManager(this));
+        tiposDeComida.setAdapter(new ContenedorTiposDeRestaurante.AdapterTipoComidas(getApplicationContext())); //TODO falta la lista
+
+
     }
 
     @Override
