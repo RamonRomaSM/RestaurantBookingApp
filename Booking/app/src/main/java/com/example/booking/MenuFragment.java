@@ -7,13 +7,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TiposComidaFragment extends Fragment {
+public class MenuFragment extends Fragment {
 
 
 
@@ -51,21 +49,21 @@ public class TiposComidaFragment extends Fragment {
     public List<TipoComida> setTiposDeComida() {
 
         ArrayList<TipoComida> resp = new ArrayList<>();
-        TipoComida arg = new TipoComida("Argentina", R.drawable.comidaargentina);
+        TipoComida arg = new TipoComida("Comida Argentina", R.drawable.comidaargentina);
         resp.add(arg);
-        TipoComida ch = new TipoComida("China", R.drawable.comidachina);
+        TipoComida ch = new TipoComida("Comida China", R.drawable.comidachina);
         resp.add(ch);
-        TipoComida kr = new TipoComida("Coreana", R.drawable.comidacorea);
+        TipoComida kr = new TipoComida("Comida Coreana", R.drawable.comidacorea);
         resp.add(kr);
-        TipoComida in = new TipoComida("India", R.drawable.comidaindia);
+        TipoComida in = new TipoComida("Comida India", R.drawable.comidaindia);
         resp.add(in);
-        TipoComida jp = new TipoComida("Japonesa", R.drawable.comidajapon);
+        TipoComida jp = new TipoComida("Comida Japonesa", R.drawable.comidajapon);
         resp.add(jp);
-        TipoComida pe = new TipoComida("Peruana", R.drawable.comidaperu);
+        TipoComida pe = new TipoComida("Comida Peruana", R.drawable.comidaperu);
         resp.add(pe);
-        TipoComida sp = new TipoComida("Española", R.drawable.comidaspain);
+        TipoComida sp = new TipoComida("Comida Española", R.drawable.comidaspain);
         resp.add(sp);
-        TipoComida ve = new TipoComida("Venezolana", R.drawable.comidavenezuela);
+        TipoComida ve = new TipoComida("Comida Venezolana", R.drawable.comidavenezuela);
         resp.add(ve);
 
 
