@@ -1,19 +1,15 @@
 
 “
-java:S1319“"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ø€¨øÿÿÿÿ8²–É®Ê1
+java:S1319•"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ø€¨øÿÿÿÿ8“Ù±Ê1
 F
-java:S1604Š"(Make this anonymous inner class a lambda(ú“Úå8²–É®Ê1
+java:S1604Š"(Make this anonymous inner class a lambda(ú“Úå8óùØ±Ê1
 E
-java:S1185%"(Remove this method to simply inherit it.(ßìê¯8Ñ–É®Ê1
+java:S1185!"(Remove this method to simply inherit it.(ßìê¯8úØ±Ê1
 T
-java:S1135}"2Complete the task associated to this TODO comment.(Õ’üÿÿÿÿ8Û–É®Ê1
+java:S1135|"2Complete the task associated to this TODO comment.(Õ’üÿÿÿÿ8šúØ±Ê1
 T
-java:S1135~"2Complete the task associated to this TODO comment.(ŠÈßÙùÿÿÿÿ8Û–É®Ê1
+java:S1135}"2Complete the task associated to this TODO comment.(ŠÈßÙùÿÿÿÿ8šúØ±Ê1
 T
-java:S1135"2Complete the task associated to this TODO comment.(Àò’¢ıÿÿÿÿ8Û–É®Ê1
-Ÿ
-java:S1186Œ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡é††8Ü–É®Ê1
-I
-java:S1168•"+Return an empty collection instead of null.(¥¹ï8Ü–É®Ê1
+java:S1135~"2Complete the task associated to this TODO comment.(Àò’¢ıÿÿÿÿ8šúØ±Ê1
 U
-java:S1135”"2Complete the task associated to this TODO comment.(öÌä§ÿÿÿÿÿ8Ü–É®Ê1
+java:S1135"2Complete the task associated to this TODO comment.(œ“½Úÿÿÿÿÿ8›úØ±Ê1
