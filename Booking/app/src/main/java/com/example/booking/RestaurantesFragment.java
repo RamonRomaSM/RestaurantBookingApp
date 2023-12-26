@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class RestaurantesFragment extends Fragment {
-    //TODO: hay que hacerle un layout a los restaurantes
+
     //TODO: hay que implementar el recyclerview
     
     @Override

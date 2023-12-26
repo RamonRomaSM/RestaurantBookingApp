@@ -7,21 +7,15 @@ public class TipoComida {
     private int imagen;
 
 
-    private RestaurantesFragment restaurantes;
 
 
-    public TipoComida(String nombre,int imagen,RestaurantesFragment fragment) {
+
+    public TipoComida(String nombre,int imagen) {
         this.nombre = nombre;
         this.imagen=imagen;
-        restaurantes=fragment;
-    }
-    public Fragment getRestaurantes() {
-        return restaurantes;
+
     }
 
-    public void setRestaurantes(RestaurantesFragment restaurantes) {
-        this.restaurantes = restaurantes;
-    }
 
     public String getNombre() {
         return nombre;

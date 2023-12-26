@@ -22,8 +22,16 @@ import java.util.List;
 
 public class MenuFragment extends Fragment {
 
-    FragmentManager fm; //TODO: este fragment manager viee de la main act a traves del constructor
-                    //TODO: hay que pasarleso al viewHolder por parametro
+    FragmentManager fm;
+
+
+    public FragmentManager getFm() {
+        return fm;
+    }
+
+    public void setFm(FragmentManager fm) {
+        this.fm = fm;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,11 +49,11 @@ public class MenuFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //TODO: aqui declaro el rcyc y le paso el dapter
+
         RecyclerView tiposDeComida=getView().findViewById(R.id.tiposDeComidaRecycler);
         tiposDeComida.setLayoutManager(new GridLayoutManager(getContext(),2));
-        tiposDeComida.setAdapter(new AdapterTipoComidas(setTiposDeComida(),getContext()));
-
+        tiposDeComida.setAdapter(new AdapterTipoComidas(setTiposDeComida(),getContext(),fm));
+        fm=getParentFragmentManager();
 
     }
     public List<TipoComida> setTiposDeComida() {
@@ -78,17 +86,18 @@ public class MenuFragment extends Fragment {
         //aqui han de estar todos los datos
         List<TipoComida> datos;
         Context context;
-
-        public AdapterTipoComidas(List<TipoComida> datos, Context context) {
+        FragmentManager fm;
+        public AdapterTipoComidas(List<TipoComida> datos, Context context, FragmentManager fm) {
             this.datos = datos;
             this.context=context;
+            this.fm=fm;
         }
 
         @NonNull
         @Override
         public AdapterTipoComidas.ViewHolderTipoComidas onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-            return new ViewHolderTipoComidas(LayoutInflater.from(context).inflate(R.layout.tipo_comida_view,parent,false));//Aun no entiendo bien los inflaters
+            return new ViewHolderTipoComidas(LayoutInflater.from(context).inflate(R.layout.tipo_comida_view,parent,false),fm);//Aun no entiendo bien los inflaters
         }
 
         @Override
@@ -113,21 +122,31 @@ public class MenuFragment extends Fragment {
             ImageView fotoComida;
             TextView nombre;
 
-            RestaurantesFragment restaurantes;
+            /*TODO: tengo el nombre del holderactual, asi que he de sacar un arraylist de todos los elementos que contienen ese dato,   (por ahora no hay bdd pero la habra)
+            *   TODO: una vez sacado el arraylist creo un nuevo restaurantesFragment y le paso el arraylist
+            *    TODO:  una vez creado el fragment hago la transaccion
+            * */
 
+            FragmentManager fm;
 
-
-            public ViewHolderTipoComidas(@NonNull View itemView) {
+            public ViewHolderTipoComidas(@NonNull View itemView,FragmentManager fm) {
                 super(itemView);
                 fotoComida=itemView.findViewById(R.id.imagenTipoComida);
                 nombre=itemView.findViewById(R.id.nombreTipoComida);
+                this.fm=fm;
+
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
+
                     }
                 });
 
+            }
+            public ArrayList<Restaurante> getRestaurantes(){
+                //TODO: implementar metodo para el testeo
+                return null;
             }
         }
     }
