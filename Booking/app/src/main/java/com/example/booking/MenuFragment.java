@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,7 +22,8 @@ import java.util.List;
 
 public class MenuFragment extends Fragment {
 
-
+    FragmentManager fm; //TODO: este fragment manager viee de la main act a traves del constructor
+                    //TODO: hay que pasarleso al viewHolder por parametro
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -93,6 +95,7 @@ public class MenuFragment extends Fragment {
         public void onBindViewHolder(@NonNull AdapterTipoComidas.ViewHolderTipoComidas holder, int position) {
             holder.nombre.setText(datos.get(position).getNombre());
             holder.fotoComida.setImageResource(datos.get(position).getImagen());
+
         }
 
         @Override
@@ -110,12 +113,20 @@ public class MenuFragment extends Fragment {
             ImageView fotoComida;
             TextView nombre;
 
+            RestaurantesFragment restaurantes;
+
+
 
             public ViewHolderTipoComidas(@NonNull View itemView) {
                 super(itemView);
                 fotoComida=itemView.findViewById(R.id.imagenTipoComida);
                 nombre=itemView.findViewById(R.id.nombreTipoComida);
+                itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
+                    }
+                });
 
             }
         }
