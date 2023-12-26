@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
      public void hacerTransaccion(Fragment frag){
-        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,frag).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,frag).addToBackStack(null).commit();
 
     }
 }
