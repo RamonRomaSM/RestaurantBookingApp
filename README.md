@@ -18,3 +18,5 @@
       https://stackoverflow.com/questions/12659747/call-an-activity-method-from-a-fragment
 ### "onBackPressed" que es y como implementarlo
       https://medium.com/orbismobile/navegando-entre-fragmentos-sin-perder-su-estado-android-febc7c2b16a7#:~:text=—%20Al%20presionar%20el%20botón%20atrás,de%20la%20aplicación%20(task). (sinceramente me quedo muy claro con la explicacion de este señor, no me hizo falta consultar nada mas)
+### Database
+         
