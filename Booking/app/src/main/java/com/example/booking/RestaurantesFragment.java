@@ -39,13 +39,13 @@ public class RestaurantesFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //TODO: al ya estar creada aqui se rellena el recyclerview
+
         RecyclerView recycler=getView().findViewById(R.id.restaurantesRecycler);
         recycler.setLayoutManager(new LinearLayoutManager(getContext()));
         recycler.setAdapter(new AdapterRestaurantes(datos,getContext()));
     }
 
-    static class AdapterRestaurantes extends RecyclerView.Adapter<AdapterRestaurantes.RestauranteViewHolder>{
+    public class AdapterRestaurantes extends RecyclerView.Adapter<AdapterRestaurantes.RestauranteViewHolder>{
         List<Restaurante>datos;
         Context context;
 
@@ -80,7 +80,12 @@ public class RestaurantesFragment extends Fragment {
                 super(itemView);
                 nombre=itemView.findViewById(R.id.nombreRestaurante);
                 logo=itemView.findViewById(R.id.imagenRestaurante);
+                itemView.setOnClickListener(v -> {
+                    //TODO: crear el frag
+                    RestauranteUnicoFragment frag=new RestauranteUnicoFragment();
+                    ((MainActivity) getActivity()).hacerTransaccion(frag);
 
+                });
             }
         }
 

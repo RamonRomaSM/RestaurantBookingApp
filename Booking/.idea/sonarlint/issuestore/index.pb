@@ -9,3 +9,5 @@ o
 ?app/src/main/java/com/example/booking/RestaurantesFragment.java,c\5\c5270738f946a6ba7b08fe89d777e2cf86158ad5
 f
 6app/src/main/java/com/example/booking/Restaurante.java,0\c\0c87c37f15d8872b4b87c97fc8f40bcde1e814d5
+s
+Capp/src/main/java/com/example/booking/RestauranteUnicoFragment.java,e\2\e27d65d59ef429b9bdf454b06fba1f94fcc7855a
