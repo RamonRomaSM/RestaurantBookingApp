@@ -138,7 +138,7 @@ public class MenuFragment extends Fragment {
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        RestaurantesFragment frag = new RestaurantesFragment(getRestaurantes());
+                        RestaurantesListFragment frag = new RestaurantesListFragment(getRestaurantes());
                         //TODO: cambiar el contenido del contenedor por este fragment
                         ((MainActivity) getActivity()).hacerTransaccion(frag);
                     }

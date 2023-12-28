@@ -17,10 +17,10 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class RestaurantesFragment extends Fragment {
+public class RestaurantesListFragment extends Fragment {
     List<Restaurante>datos;
 
-    public RestaurantesFragment(List<Restaurante> datos) {
+    public RestaurantesListFragment(List<Restaurante> datos) {
         this.datos = datos;
     }
 
@@ -81,8 +81,8 @@ public class RestaurantesFragment extends Fragment {
                 nombre=itemView.findViewById(R.id.nombreRestaurante);
                 logo=itemView.findViewById(R.id.imagenRestaurante);
                 itemView.setOnClickListener(v -> {
-                    //TODO: crear el frag
-                    RestauranteUnicoFragment frag=new RestauranteUnicoFragment();
+
+                    RestauranteUnicoFragment frag=new RestauranteUnicoFragment(nombre.getText().toString());
                     ((MainActivity) getActivity()).hacerTransaccion(frag);
 
                 });

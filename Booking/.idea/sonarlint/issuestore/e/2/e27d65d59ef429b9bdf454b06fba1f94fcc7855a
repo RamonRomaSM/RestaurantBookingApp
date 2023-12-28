@@ -1,5 +1,9 @@
 
-E
-java:S1185"(Remove this method to simply inherit it.(ßìê¯8Óå¹Ê1
+~
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "resp".(œš¶ºşÿÿÿÿ8°†áƒË1
 O
-java:S1135"2Complete the task associated to this TODO comment.(£±Å8Ë³‘ºÊ1
+java:S1135"2Complete the task associated to this TODO comment.(ö©í°8½†áƒË1
+E
+java:S1185""(Remove this method to simply inherit it.(ßìê¯8½†áƒË1
+W
+java:S11173":Rename "nombre" which hides the field declared at line 19.(Ÿ‹ä¥8À†áƒË1
