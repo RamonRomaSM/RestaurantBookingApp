@@ -39,16 +39,35 @@
 
         </LinearLayout>
 
-
-        <TextView
-            android:id="@+id/paginaWeb"
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.example.booking.RestauranteActualFragment"
             android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:text="TextView"
-            android:textAlignment="center"
-            tools:layout_editor_absoluteX="15dp"
-            tools:layout_editor_absoluteY="285dp" />
+            android:layout_height="400dp" />
 
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/iraweb"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Ver la pagina web"
+                android:layout_marginBottom="30dp"/>
+
+            <Button
+                android:id="@+id/reservar"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Hacer reserva"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 </FrameLayout>

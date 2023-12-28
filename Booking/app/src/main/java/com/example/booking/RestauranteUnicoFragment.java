@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,7 +27,7 @@ public class RestauranteUnicoFragment extends Fragment {
 
 
     public Restaurante getDatos(String nombre) { //TODO: este metodo hace una query que recoge los datos WHERE nombreRrestaurante=nombre
-        Restaurante resp = new Restaurante(nombre,R.drawable.ic_launcher_foreground,"www.PaginaWeb.com");
+        Restaurante resp = new Restaurante(nombre,R.drawable.ic_launcher_foreground,"https://github.com/RamonRomaSM");
         return resp;
     }
 
@@ -49,10 +50,11 @@ public class RestauranteUnicoFragment extends Fragment {
         restaurante=getDatos(nombre);
         ImageView logo=getView().findViewById(R.id.logo);
         TextView nombre=getView().findViewById(R.id.nombre);
-        TextView pagina=getView().findViewById(R.id.paginaWeb);
+
+
         logo.setImageResource(restaurante.getImagen());
         nombre.setText(restaurante.getNombre());
-        pagina.setText(restaurante.getPaginaWeb());
+
 
 
 
