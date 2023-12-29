@@ -54,9 +54,19 @@ public class RestauranteUnicoFragment extends Fragment {
 
         logo.setImageResource(restaurante.getImagen());
         nombre.setText(restaurante.getNombre());
+        ImageView imagen1=getView().findViewById(R.id.sampleRestaurante1);
+        imagen1.setImageResource(R.drawable.restauranteimageasset);
 
+        ImageView imagen2=getView().findViewById(R.id.sampleRestaurante2);
+        imagen2.setImageResource(R.drawable.comidaargentina);
 
+        ImageView imagen3=getView().findViewById(R.id.sampleRestaurante3);
+        imagen3.setImageResource(R.drawable.restauranteimageasset);
 
-
+        ImageView imagen4=getView().findViewById(R.id.sampleRestaurante4);
+        imagen4.setImageResource(R.drawable.restauranteimageasset);
     }
+
+
+
 }
