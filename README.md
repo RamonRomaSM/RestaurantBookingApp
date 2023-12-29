@@ -18,6 +18,7 @@
       https://stackoverflow.com/questions/12659747/call-an-activity-method-from-a-fragment
 ### "onBackPressed" que es y como implementarlo
       https://medium.com/orbismobile/navegando-entre-fragmentos-sin-perder-su-estado-android-febc7c2b16a7#:~:text=—%20Al%20presionar%20el%20botón%20atrás,de%20la%20aplicación%20(task). (sinceramente me quedo muy claro con la explicacion de este señor, no me hizo falta consultar nada mas)
-### Database utilizando room   (room es basicamente una capa de abstraccion por encima de sqlite que nos ofrece android)
-      https://developer.android.com/training/data-storage/room   
+### Scroll view que es y como implementarlo
+      https://www.javatpoint.com/android-scrollview-vertical#:~:text=ScrollView%20is%20used%20to%20scroll,simple%20example%20of%20vertical%20ScrollView.
+      https://www.youtube.com/watch?v=huxvGwRtt5Q   
          
