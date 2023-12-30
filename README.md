@@ -22,4 +22,6 @@
       https://www.javatpoint.com/android-scrollview-vertical#:~:text=ScrollView%20is%20used%20to%20scroll,simple%20example%20of%20vertical%20ScrollView.
       https://www.youtube.com/watch?v=huxvGwRtt5Q   
       https://stackoverflow.com/questions/21824542/android-scrollview-inside-another-scrollview-doesnt-scroll
-         
+### Implementacion del webView
+      https://www.youtube.com/watch?v=mLsLwqpDoE4
+      https://www.youtube.com/watch?v=6ms2TFwA8nU
