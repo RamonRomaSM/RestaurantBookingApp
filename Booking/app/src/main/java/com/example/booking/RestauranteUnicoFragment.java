@@ -6,10 +6,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,7 +27,7 @@ public class RestauranteUnicoFragment extends Fragment {
 
 
     public Restaurante getDatos(String nombre) { //TODO: este metodo hace una query que recoge los datos WHERE nombreRrestaurante=nombre
-        Restaurante resp = new Restaurante(nombre,R.drawable.ic_launcher_foreground,"https://github.com/RamonRomaSM");
+        Restaurante resp = new Restaurante(nombre);
         return resp;
     }
 
@@ -52,8 +52,13 @@ public class RestauranteUnicoFragment extends Fragment {
         TextView nombre=getView().findViewById(R.id.nombre);
 
 
-        logo.setImageResource(restaurante.getImagen());
+        logo.setImageResource(restaurante.getLogo());
         nombre.setText(restaurante.getNombre());
+
+        TextView texto=getView().findViewById(R.id.descripcion);
+        texto.setText(restaurante.getDescripcion());
+
+        //TODO: un metodo para cargar las imagenes desde la db
         ImageView imagen1=getView().findViewById(R.id.sampleRestaurante1);
         imagen1.setImageResource(R.drawable.restauranteimageasset);
 
@@ -65,6 +70,21 @@ public class RestauranteUnicoFragment extends Fragment {
 
         ImageView imagen4=getView().findViewById(R.id.sampleRestaurante4);
         imagen4.setImageResource(R.drawable.restauranteimageasset);
+
+
+        Button iraweb=getView().findViewById(R.id.iraweb);
+        iraweb.setOnClickListener(v -> {
+            PaginaWebFragment frag=new PaginaWebFragment(restaurante.getPaginaWeb());
+            ((MainActivity) getActivity()).hacerTransaccion(frag);
+        });
+
+        Button reservar=getView().findViewById(R.id.reservar);
+        reservar.setOnClickListener(v -> {
+            HacerReservaFragment frag= new HacerReservaFragment();
+            ((MainActivity)getActivity()).hacerTransaccion(frag);
+        });
+
+
     }
 
 
