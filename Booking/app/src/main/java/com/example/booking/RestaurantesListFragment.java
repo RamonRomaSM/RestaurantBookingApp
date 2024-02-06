@@ -82,7 +82,7 @@ public class RestaurantesListFragment extends Fragment {
                 logo=itemView.findViewById(R.id.imagenRestaurante);
                 itemView.setOnClickListener(v -> {
 
-                    RestauranteUnicoFragment frag=new RestauranteUnicoFragment(nombre.getText().toString());
+                    RestauranteUnicoFragment frag=new RestauranteUnicoFragment(nombre.getText().toString());//TODO: aqui hay que hacer una llamada a la bdd para cojer os datos de este restaurante en especifico
                     ((MainActivity) getActivity()).hacerTransaccion(frag);
 
                 });

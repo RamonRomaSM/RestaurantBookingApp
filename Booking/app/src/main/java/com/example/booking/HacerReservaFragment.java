@@ -28,6 +28,8 @@ public class HacerReservaFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_hacer_reserva, container, false);
+        //TODO: aqui poner el contenido de los spinners, hacer metodo reservar
+
     }
 
     @Override

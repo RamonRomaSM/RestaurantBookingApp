@@ -138,18 +138,18 @@ public class MenuFragment extends Fragment {
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        RestaurantesListFragment frag = new RestaurantesListFragment(getRestaurantes());
+                        RestaurantesListFragment frag = new RestaurantesListFragment(getRestaurantes()); // cuando haga click en un tipo de rest, hago la llamada a la bdd
                         //TODO: cambiar el contenido del contenedor por este fragment
                         ((MainActivity) getActivity()).hacerTransaccion(frag);
                     }
                 });
 
             }
-
+            //TODO: este es el metodo que se conecta a la bdd
             public ArrayList<Restaurante> getRestaurantes() {
                 ArrayList<Restaurante> resp = new ArrayList<>();
                 for (int i = 0; i < 10; i++) {
-                    Restaurante a = new Restaurante("Restaurante " + i);
+                    Restaurante a = new Restaurante("Restaurante " + i);//  TODO: aqui estoy usando el constructor para tests, habria que cambiar eso
                     resp.add(a);
                 }
                 return resp;

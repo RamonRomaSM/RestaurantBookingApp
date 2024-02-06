@@ -19,31 +19,81 @@
             android:text="Volver" />
 
         <TextView
-            android:id="@+id/textView2"
+
+            android:paddingTop="40dp"
+            android:paddingBottom="30dp"
+            android:id="@+id/nombreLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Introduzca su nombre"
-            si/>
+            android:text="Introduzca su nombre:"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:text="Name" />
+            android:textAlignment="center"
+            android:textSize="30dp"
+            />
 
         <TextView
-            android:id="@+id/textView3"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:id="@+id/correoLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Introduzca su correo:"
+            android:textAlignment="center"
+            android:textSize="30dp"/>
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textSize="30dp"
             android:inputType="textEmailAddress" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/horarioLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la franja horaria"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:id="@+id/horaInicial"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:id="@+id/horaFinal"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/reservar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Reservar" />
+
     </LinearLayout>
 </FrameLayout>
