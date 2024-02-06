@@ -26,3 +26,10 @@
       https://www.youtube.com/watch?v=6U8-_G5yjwA
       https://www.youtube.com/watch?v=6ms2TFwA8nU
       https://stackoverflow.com/questions/27696399/on-android-emulator-trying-to-load-a-webview-i-get-neterr-cache-miss      (para arreglar un error que me daba)
+### Customizar a fondo los recyclerviews
+      https://www.geeksforgeeks.org/cardview-using-recyclerview-in-android-with-example/
+
+
+
+
+      
