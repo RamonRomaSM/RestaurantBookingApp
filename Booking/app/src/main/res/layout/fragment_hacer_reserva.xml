@@ -41,7 +41,7 @@
             />
 
         <TextView
-            android:paddingTop="20dp"
+            android:paddingTop="50dp"
             android:paddingBottom="20dp"
             android:id="@+id/correoLabel"
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:inputType="textEmailAddress" />
 
         <TextView
-            android:paddingTop="20dp"
+            android:paddingTop="50dp"
             android:id="@+id/horarioLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:orientation="horizontal"
+            android:layout_marginTop="20dp"
             >
 
             <Spinner
@@ -88,12 +89,11 @@
                 android:layout_weight="1" />
         </LinearLayout>
 
-        <Button
-
-            android:id="@+id/reservar"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Reservar" />
-
     </LinearLayout>
+    <Button
+        android:layout_gravity="bottom"
+        android:id="@+id/reservar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Reservar" />
 </FrameLayout>

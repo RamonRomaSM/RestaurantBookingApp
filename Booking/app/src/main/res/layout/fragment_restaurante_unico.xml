@@ -95,35 +95,30 @@
             </LinearLayout>
 
         </ScrollView>
-        <!-- MAPA -->
 
+    </LinearLayout>
+    <!-- BOTONES -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
 
+        <Button
+            android:id="@+id/iraweb"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Ver la pagina web"
+            android:layout_marginBottom="30dp"/>
 
-        <!-- BOTONES -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/iraweb"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:text="Ver la pagina web"
-                android:layout_marginBottom="30dp"/>
-
-            <Button
-                android:id="@+id/reservar"
-                android:layout_width="wrap_content"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:text="Hacer reserva"
-                android:layout_marginBottom="30dp"/>
-        </LinearLayout>
-
-
-
+        <Button
+            android:id="@+id/reservar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Hacer reserva"
+            android:layout_marginBottom="30dp"/>
     </LinearLayout>
 </FrameLayout>
 
