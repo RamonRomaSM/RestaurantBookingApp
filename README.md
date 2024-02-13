@@ -34,7 +34,9 @@
 ### Iconos restaurantes
       https://www.flaticon.com/packs/international-flags
 ### Validar email
-      https://stackoverflow.com/questions/22348212/android-check-if-an-email-address-is-valid-or-not
+      https://stackoverflow.com/questions/22348212/android-check-if-an-email-address-is-valid-or-not      
+### Notificaciones
+      https://developer.android.com/develop/ui/views/notifications/expanded?hl=es-419
       
 
 
