@@ -41,27 +41,31 @@ public class HacerReservaFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        //TODO: aqui poner el contenido de los spinners, hacer metodo reservar
+
+        List<String> list = new ArrayList<String>();
+        Spinner horainicial=getView().findViewById(R.id.horaInicial);
+        Spinner horafinal=getView().findViewById(R.id.horaFinal);
+        for(int i=14;i<22;i++){
+            for(int j=0;j<4;j++){
+                if(j!=0) {
+                    list.add(i + ":" + (15 * j));
+                }
+                else{list.add(i+":00");}
+            }
+        }
+
+        ArrayAdapter<String> adp1 = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, list);
+        horainicial.setAdapter(adp1);
+        horafinal.setAdapter(adp1);
+
+
+        //hacer metodo reservar
         Button volver=getView().findViewById(R.id.volver);
         volver.setOnClickListener(v -> {
             getParentFragmentManager().popBackStack();
         });
 
 
-        List<String> list = new ArrayList<String>();
-
-
-        Spinner horainicial=getView().findViewById(R.id.horaInicial);
-        Spinner horafinal=getView().findViewById(R.id.horaFinal);
-        for(int i=12;i<22;i++){
-            for(int j=0;i<4;j++){
-                list.add(i+":"+(15*j));
-            }
-
-        }
-        ArrayAdapter<String> adp1 = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, list);
-        adp1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        horafinal.setAdapter(adp1);
 
 
     }

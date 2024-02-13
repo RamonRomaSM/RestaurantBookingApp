@@ -1,15 +1,9 @@
 
 {
-java:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ8Í´øşÙ1
+java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ8ÂÓ¾€Ú1
 {
-java:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(ìÊøÿÿÿÿ8Í´øşÙ1
+java:S22939"YReplace the type specification in this constructor call with the diamond operator ("<>").(ìÊøÿÿÿÿ8ÃÓ¾€Ú1
 E
-java:S1185"(Remove this method to simply inherit it.(ßìê¯8è´øşÙ1
-\
-java:S18546"?Remove this useless assignment to local variable "horainicial".(Óªá8åã…ÿÙ1
-O
-java:S1135,"2Complete the task associated to this TODO comment.(ïúóª8ë´øşÙ1
+java:S1185"(Remove this method to simply inherit it.(ßìê¯8İÓ¾€Ú1
 N
-java:S1602.",Remove useless curly braces around statement(‰ìÇõûÿÿÿÿ8ì´øşÙ1
-M
-java:S14816"0Remove this unused "horainicial" local variable.(Óªá8éã…ÿÙ1
+java:S1602@",Remove useless curly braces around statement(‰ìÇõûÿÿÿÿ8åÓ¾€Ú1

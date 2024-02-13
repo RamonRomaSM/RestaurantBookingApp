@@ -86,7 +86,11 @@
                 android:id="@+id/horaFinal"
                 android:layout_width="match_parent"
                 android:layout_height="57dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:spinnerMode="dropdown">
+
+
+            </Spinner>
         </LinearLayout>
 
     </LinearLayout>
