@@ -36,6 +36,7 @@
 ### Validar email
       https://stackoverflow.com/questions/22348212/android-check-if-an-email-address-is-valid-or-not      
 ### Notificaciones
+      https://www.youtube.com/watch?v=6XZSY5Y_jlY (a este video le falta definir el channel id, eso lo encontre en el recurso de abajo)
       https://developer.android.com/develop/ui/views/notifications/expanded?hl=es-419
       https://developer.android.com/develop/ui/views/notifications/build-notification?hl=es-419#groovy
 
