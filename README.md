@@ -42,4 +42,4 @@
 
 ### Firebase
       https://www.youtube.com/watch?v=qKxisFLQRpQ (la chica lo usa para webapp pero lo que es el set up y entender como va me sirvio)
-      
+      https://youtube.com/playlist?list=PLjnZx7KD6m-ySasHtRKIX-04VuOYmGBmr&si=yLwMXbVvOFs6_ogi (tutorial definitivo de firebase)
