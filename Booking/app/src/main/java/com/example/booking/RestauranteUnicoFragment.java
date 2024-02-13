@@ -81,6 +81,7 @@ public class RestauranteUnicoFragment extends Fragment {
         Button reservar=getView().findViewById(R.id.reservar);
         reservar.setOnClickListener(v -> {
             HacerReservaFragment frag= new HacerReservaFragment();
+            frag.setAct(restaurante);
             ((MainActivity)getActivity()).hacerTransaccion(frag);
         });
 

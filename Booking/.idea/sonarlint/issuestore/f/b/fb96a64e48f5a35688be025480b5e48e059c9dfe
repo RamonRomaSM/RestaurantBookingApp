@@ -1,9 +1,21 @@
 
 {
-java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ8ÂÓ¾€Ú1
+java:S2293R"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ8Ø„ûÚ1
+v
+java:S2293\"YReplace the type specification in this constructor call with the diamond operator ("<>").(Éú‡“8Ø„ûÚ1
 {
-java:S22939"YReplace the type specification in this constructor call with the diamond operator ("<>").(ìÊøÿÿÿÿ8ÃÓ¾€Ú1
+java:S2293h"YReplace the type specification in this constructor call with the diamond operator ("<>").(ìÊøÿÿÿÿ8Ø„ûÚ1
+{
+java:S2293i"YReplace the type specification in this constructor call with the diamond operator ("<>").(êêœøÿÿÿÿ8Ø„ûÚ1
+y
+java:S1450%"WRemove the "reservar" field and declare it as a local variable in the relevant methods.(»µ±¤ÿÿÿÿÿ8è„ûÚ1
 E
-java:S1185"(Remove this method to simply inherit it.(ßìê¯8İÓ¾€Ú1
+java:S1185-"(Remove this method to simply inherit it.(ßìê¯8ë„ûÚ1
 N
-java:S1602@",Remove useless curly braces around statement(‰ìÇõûÿÿÿÿ8åÓ¾€Ú1
+java:S1602A",Remove useless curly braces around statement(‰ìÇõûÿÿÿÿ8í„ûÚ1
+N
+java:S1602I",Remove useless curly braces around statement(Ğÿ¥ıÿÿÿÿ8î„ûÚ1
+t
+java:S3776N"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(È§Ááşÿÿÿÿ8ï„ûÚ1
+z
+java:S3252†"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(·ã«°üÿÿÿÿ8ù„ûÚ1
