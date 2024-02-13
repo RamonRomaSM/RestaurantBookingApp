@@ -6,7 +6,7 @@ public class Restaurante {
     private String paginaWeb;
 
     private String descripcion;
-    
+
 
     public Restaurante(String nombre, int logo, String paginaWeb, String descripcion) {
         this.logo = logo;
