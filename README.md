@@ -37,7 +37,7 @@
       https://stackoverflow.com/questions/22348212/android-check-if-an-email-address-is-valid-or-not      
 ### Notificaciones
       https://developer.android.com/develop/ui/views/notifications/expanded?hl=es-419
-      
+      https://developer.android.com/develop/ui/views/notifications/build-notification?hl=es-419#groovy
 
 
       
