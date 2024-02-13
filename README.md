@@ -31,9 +31,10 @@
       
 ### Customizar a fondo los recyclerviews
       https://www.geeksforgeeks.org/cardview-using-recyclerview-in-android-with-example/
-### Iconos comida
+### Iconos restaurantes
       https://www.flaticon.com/packs/international-flags
-
+### Push notifications
+      
 
 
       
