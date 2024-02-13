@@ -41,7 +41,7 @@
             />
 
         <TextView
-            android:paddingTop="50dp"
+            android:paddingTop="25dp"
             android:paddingBottom="20dp"
             android:id="@+id/correoLabel"
             android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:inputType="textEmailAddress" />
 
         <TextView
-            android:paddingTop="50dp"
+            android:paddingTop="25dp"
             android:id="@+id/horarioLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
