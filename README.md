@@ -33,8 +33,13 @@
       https://www.geeksforgeeks.org/cardview-using-recyclerview-in-android-with-example/
 ### Iconos restaurantes
       https://www.flaticon.com/packs/international-flags
-### Push notifications
-      
+### Validar email
+      https://stackoverflow.com/questions/22348212/android-check-if-an-email-address-is-valid-or-not      
+### Notificaciones
+      https://www.youtube.com/watch?v=6XZSY5Y_jlY (a este video le falta definir el channel id, eso lo encontre en el recurso de abajo)
+      https://developer.android.com/develop/ui/views/notifications/expanded?hl=es-419
+      https://developer.android.com/develop/ui/views/notifications/build-notification?hl=es-419#groovy
 
-
-      
+### Firebase
+      https://www.youtube.com/watch?v=qKxisFLQRpQ (la chica lo usa para webapp pero lo que es el set up y entender como va me sirvio)
+      https://youtube.com/playlist?list=PLjnZx7KD6m-ySasHtRKIX-04VuOYmGBmr&si=yLwMXbVvOFs6_ogi (tutorial definitivo de firebase)
