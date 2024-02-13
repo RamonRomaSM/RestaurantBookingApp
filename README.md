@@ -41,5 +41,5 @@
       https://developer.android.com/develop/ui/views/notifications/build-notification?hl=es-419#groovy
 
 ### Firebase
-      https://www.youtube.com/watch?v=qKxisFLQRpQ (la chica lo usa para webapp pero lo que es el set up me sirvio)
+      https://www.youtube.com/watch?v=qKxisFLQRpQ (la chica lo usa para webapp pero lo que es el set up y entender como va me sirvio)
       
