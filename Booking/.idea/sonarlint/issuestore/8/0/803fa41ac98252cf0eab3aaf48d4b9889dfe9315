@@ -1,19 +1,5 @@
 
-“
-java:S1319•"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ø€¨øÿÿÿÿ8“Ù±Ê1
 F
-java:S1604Š"(Make this anonymous inner class a lambda(ú“Úå8óùØ±Ê1
+java:S1604‰"(Make this anonymous inner class a lambda(ú“Úå8ÂíµœÚ1
 E
-java:S1185!"(Remove this method to simply inherit it.(ßìê¯8úØ±Ê1
-T
-java:S1135|"2Complete the task associated to this TODO comment.(Õ’üÿÿÿÿ8šúØ±Ê1
-T
-java:S1135}"2Complete the task associated to this TODO comment.(ŠÈßÙùÿÿÿÿ8šúØ±Ê1
-T
-java:S1135~"2Complete the task associated to this TODO comment.(Àò’¢ıÿÿÿÿ8šúØ±Ê1
-U
-java:S1135"2Complete the task associated to this TODO comment.(œ“½Úÿÿÿÿÿ8›úØ±Ê1
-U
-java:S1135”"2Complete the task associated to this TODO comment.(ºì‰¥ıÿÿÿÿ8Ôş¿ôÙ1
-U
-java:S1135˜"2Complete the task associated to this TODO comment.(ªèäËùÿÿÿÿ8äş¿ôÙ1
+java:S1185$"(Remove this method to simply inherit it.(ßìê¯8ñíµœÚ1

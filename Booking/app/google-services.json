@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "560361704164",
+    "firebase_url": "https://booking-c738a-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "booking-c738a",
     "storage_bucket": "booking-c738a.appspot.com"
   },

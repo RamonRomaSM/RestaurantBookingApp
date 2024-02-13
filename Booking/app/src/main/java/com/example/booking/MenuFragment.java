@@ -11,11 +11,18 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,10 +31,6 @@ import java.util.List;
 public class MenuFragment extends Fragment {
 
     FragmentManager fm;
-
-
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -98,7 +101,7 @@ public class MenuFragment extends Fragment {
         @Override
         public AdapterTipoComidas.ViewHolderTipoComidas onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-            return new ViewHolderTipoComidas(LayoutInflater.from(context).inflate(R.layout.tipo_comida_view, parent, false), fm, contenedor);//Aun no entiendo bien los inflaters
+            return new ViewHolderTipoComidas(LayoutInflater.from(context).inflate(R.layout.tipo_comida_view, parent, false), fm, contenedor);
         }
 
         @Override
@@ -121,11 +124,7 @@ public class MenuFragment extends Fragment {
             ImageView fotoComida;
             TextView nombre;
 
-            /*TODO: tengo el nombre del holderactual, asi que he de sacar un arraylist de todos los elementos que contienen ese dato,   (por ahora no hay bdd pero la habra)
-             *   TODO: una vez sacado el arraylist creo un nuevo restaurantesFragment y le paso el arraylist
-             *    TODO:  una vez creado el fragment hago la transaccion
-             *
-             * */
+
 
             FragmentManager fm;
             FragmentContainerView contenedor;
@@ -138,22 +137,15 @@ public class MenuFragment extends Fragment {
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        RestaurantesListFragment frag = new RestaurantesListFragment(getRestaurantes()); // cuando haga click en un tipo de rest, hago la llamada a la bdd
-                        //TODO: cambiar el contenido del contenedor por este fragment
+
+                        RestaurantesListFragment frag = new RestaurantesListFragment(((MainActivity) getActivity()).getRestaurantes(nombre.getText().toString())); // cuando haga click en un tipo de rest, hago la llamada a la bdd
+
                         ((MainActivity) getActivity()).hacerTransaccion(frag);
                     }
                 });
 
             }
-            //TODO: este es el metodo que se conecta a la bdd
-            public ArrayList<Restaurante> getRestaurantes() {
-                ArrayList<Restaurante> resp = new ArrayList<>();
-                for (int i = 0; i < 10; i++) {
-                    Restaurante a = new Restaurante("Restaurante " + i);//  TODO: aqui estoy usando el constructor para tests, habria que cambiar eso
-                    resp.add(a);
-                }
-                return resp;
-            }
+
         }
     }
 

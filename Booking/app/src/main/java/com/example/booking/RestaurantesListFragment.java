@@ -63,9 +63,9 @@ public class RestaurantesListFragment extends Fragment {
         @Override
         public void onBindViewHolder(@NonNull RestauranteViewHolder holder, int position) {
             holder.nombre.setText(datos.get(position).getNombre());
-
-            //TODO: tambien cambiar la imagen, por ahora no lo hago porque no tengo imagenes
             holder.logo.setImageResource(R.drawable.ic_launcher_foreground);
+            holder.act=datos.get(holder.getAdapterPosition());
+
         }
 
         @Override
@@ -76,13 +76,17 @@ public class RestaurantesListFragment extends Fragment {
         public class RestauranteViewHolder extends RecyclerView.ViewHolder{
             TextView nombre;
             ImageView logo;
+            Restaurante act;
             public RestauranteViewHolder(@NonNull View itemView) {
                 super(itemView);
                 nombre=itemView.findViewById(R.id.nombreRestaurante);
                 logo=itemView.findViewById(R.id.imagenRestaurante);
+
+
+
                 itemView.setOnClickListener(v -> {
 
-                    RestauranteUnicoFragment frag=new RestauranteUnicoFragment(nombre.getText().toString());//TODO: aqui hay que hacer una llamada a la bdd para cojer os datos de este restaurante en especifico
+                    RestauranteUnicoFragment frag=new RestauranteUnicoFragment(act);
                     ((MainActivity) getActivity()).hacerTransaccion(frag);
 
                 });

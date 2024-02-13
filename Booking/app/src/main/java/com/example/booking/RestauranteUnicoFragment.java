@@ -20,16 +20,13 @@ public class RestauranteUnicoFragment extends Fragment {
     String nombre;
     Restaurante restaurante;
 
-    public RestauranteUnicoFragment(String nombre) {
-        this.nombre = nombre;
+    public RestauranteUnicoFragment(Restaurante act) {
+        restaurante=act;
 
     }
 
 
-    public Restaurante getDatos(String nombre) { //TODO: este metodo hace una query que recoge los datos WHERE nombreRrestaurante=nombre
-        Restaurante resp = new Restaurante(nombre);
-        return resp;
-    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,7 +44,7 @@ public class RestauranteUnicoFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        restaurante=getDatos(nombre);
+
         ImageView logo=getView().findViewById(R.id.logo);
         TextView nombre=getView().findViewById(R.id.nombre);
 
@@ -58,7 +55,7 @@ public class RestauranteUnicoFragment extends Fragment {
         TextView texto=getView().findViewById(R.id.descripcion);
         texto.setText(restaurante.getDescripcion());
 
-        //TODO: un metodo para cargar las imagenes desde la db
+
         ImageView imagen1=getView().findViewById(R.id.sampleRestaurante1);
         imagen1.setImageResource(R.drawable.restauranteimageasset);
 
