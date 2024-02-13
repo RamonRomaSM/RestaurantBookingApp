@@ -33,7 +33,8 @@
       https://www.geeksforgeeks.org/cardview-using-recyclerview-in-android-with-example/
 ### Iconos restaurantes
       https://www.flaticon.com/packs/international-flags
-### Push notifications
+### Validar email
+      https://stackoverflow.com/questions/22348212/android-check-if-an-email-address-is-valid-or-not
       
 
 
