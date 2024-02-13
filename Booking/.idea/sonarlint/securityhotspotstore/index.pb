@@ -27,3 +27,5 @@ A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 H
 app/google-services.json,f\d\fd8d34b142d02ec743a8efefefd2c097961666e9
+c
+3app/src/main/java/com/example/booking/LogoView.java,b\8\b888dd9a590021e0bd89a2621e01a170eb07b760

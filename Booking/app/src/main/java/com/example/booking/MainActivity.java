@@ -2,6 +2,7 @@ package com.example.booking;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.NotificationCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentContainerView;
@@ -10,6 +11,7 @@ import androidx.fragment.app.FragmentManager;
 import android.app.Notification;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -41,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
                                                     *
                                                     * puedes borrar esta linea de codigo y ver el bug
                                                     * */
+        LogoView logo =new LogoView(this);
+        ConstraintLayout contenedorLogo=findViewById(R.id.logoLayout);
+        contenedorLogo.addView(logo);
+
     }
      public void hacerTransaccion(Fragment frag){
         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,frag).addToBackStack(null).commit();
