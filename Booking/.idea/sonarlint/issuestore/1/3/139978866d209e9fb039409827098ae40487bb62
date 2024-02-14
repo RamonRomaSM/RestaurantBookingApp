@@ -1,5 +1,7 @@
 
 ’
-java:S1319:"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€‹Òùúÿÿÿÿ8­Å¦¢Ú1
+java:S1319R"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(€‹Òùúÿÿÿÿ8ŠˆÆ¦Ú1
+S
+java:S2696D"6Make the enclosing method "static" or remove this set.(²Î¯¯8£ˆÆ¦Ú1
 V
-java:S1117;"9Rename "dbref" which hides the field declared at line 28.(ŞãÄÖ8ÌÅ¦¢Ú1
+java:S1117S"9Rename "dbref" which hides the field declared at line 30.(ŞãÄÖ8¤ˆÆ¦Ú1

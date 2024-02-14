@@ -10,11 +10,13 @@ import androidx.fragment.app.FragmentManager;
 
 import android.app.Notification;
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.Layout;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -26,13 +28,17 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     static final DatabaseReference dbref= FirebaseDatabase.getInstance().getReference();
+
+    static boolean musicState=true;
+
+    MediaPlayer player;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getRestaurantes("Cocina Venezolana"); //te vas a reir con esto, peor tiene una explicacion
+        getRestaurantes("Cocina Venezolana"); //se que esto aqui parece que no tiene sentido pero lo tiene
                                                     /*
-                                                    * pero basicamente, la primera vez que llamaba a este metodo, no me devolvia nada, salia y entrava del fragment y ya funcionaba
+                                                    * pero basicamente, la primera vez que llamaba a este metodo,la bdd no me devolvia nada, salia y entrava del fragment y ya funcionaba
                                                     * buscando por internet habia gente con el mismo problema, pero sin soluciones definitivas, bug de firebase supongo
                                                     *
                                                     * lo mas parecido a una respuesta que encontre fue
@@ -43,9 +49,27 @@ public class MainActivity extends AppCompatActivity {
                                                     *
                                                     * puedes borrar esta linea de codigo y ver el bug
                                                     * */
+        player= MediaPlayer.create(this, R.raw.lofi);
+        player.setLooping(true);
+        player.start();
         LogoView logo =new LogoView(this);
         ConstraintLayout contenedorLogo=findViewById(R.id.logoLayout);
         contenedorLogo.addView(logo);
+        FloatingActionButton musica=findViewById(R.id.musicabtn);
+        musica.setOnClickListener(v ->
+        {
+            if(musicState){
+                player.pause();
+
+            }
+            else{
+                player.start();
+            }
+            musicState=!musicState;
+        });
+
+
+
 
     }
      public void hacerTransaccion(Fragment frag){
