@@ -126,7 +126,7 @@ public class HacerReservaFragment extends Fragment {
                     .setContentText("A nombre de "+tnombre)
                     .setStyle(new NotificationCompat.BigTextStyle()
                             .bigText(contenidoReserva))
-                    .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+                    .setPriority(NotificationCompat.PRIORITY_MAX);
 
             NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
 
@@ -148,7 +148,7 @@ public class HacerReservaFragment extends Fragment {
         // the NotificationChannel class is not in the Support Library.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
-            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            int importance = NotificationManager.IMPORTANCE_HIGH;
             NotificationChannel channel = new NotificationChannel("MyNotification", "reserva", importance);
             channel.setDescription("reserva realizada");
 
