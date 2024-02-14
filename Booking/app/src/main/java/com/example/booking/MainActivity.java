@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         player= MediaPlayer.create(this, R.raw.lofi);
         player.setLooping(true);
         player.start();
+
         LogoView logo =new LogoView(this);
         ConstraintLayout contenedorLogo=findViewById(R.id.logoLayout);
         contenedorLogo.addView(logo);
@@ -72,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
      public void hacerTransaccion(Fragment frag){
         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,frag).addToBackStack(null).commit();
     }
@@ -106,5 +108,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
         return resp;
+    }
+
+    //Para que la musica se pare cuando minimices la app
+    @Override
+    protected void onPause() {
+        super.onPause();
+        player.pause();
+
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(musicState){
+            player.start();
+        }
+        else{
+            player.pause();
+        }
     }
 }
